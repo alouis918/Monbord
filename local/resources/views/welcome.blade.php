@@ -38,7 +38,7 @@
     <body>
         <div class="container">
             <div class="content">
-                <div class="title">Danick Dayola</div>
+                <div class="title">Franck Stiffler </div>
             </div>
         </div>
     </body>
