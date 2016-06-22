@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('welcome');
 });
 
 Route::controllers([
@@ -20,3 +20,8 @@ Route::controllers([
     'password' =>'Auth\PasswordController',
 
 ]);
+Route:get('/getRequest', function(){
+    if(Request::ajax()){
+        return 'getRequest has loaded completely.';
+    }
+});
