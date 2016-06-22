@@ -1,7 +1,7 @@
 
 @extends('app')
 @section('title')
-    Welcome!
+    {{trans('greetings.hello')}}
 @endsection
 
 @section('content')
