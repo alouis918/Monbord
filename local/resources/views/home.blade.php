@@ -1,6 +1,6 @@
 @extends('app')
 @section('title')
-	Home!
+	Home desmond!
 @endsection
 @section('content')
 <div class="container">
