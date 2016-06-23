@@ -20,8 +20,15 @@ Route::controllers([
     'password' =>'Auth\PasswordController',
 
 ]);
-Route:get('/getRequest', function(){
+Route::get('/getRequest', function(){
     if(Request::ajax()){
         return 'getRequest has loaded completely.';
     }
 });
+
+Route::get('/lang/{locale}' , array(
+    'before' => 'csrf',
+    'as' => 'language-chooser',
+    'uses' => 'LanguageController@chooser'
+) );
+
